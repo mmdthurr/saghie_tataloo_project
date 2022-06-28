@@ -1,0 +1,2 @@
+class GenesNotFunctional(BaseException):
+    pass
