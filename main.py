@@ -13,7 +13,6 @@ tweet_owner = Girl(
         'tibia_bone': 'AAGGCCT',
         'femur_bone': 'AAGGCCT',
         'vagina': 'AAGGCCT',
-        'penis': 'AAGGCCT',
         'leg_muscle': 'GGGTT',
         'cords_mucosal': 'GTAC',
         'epiglottis': 'CCGGTA'
@@ -27,7 +26,6 @@ tweet_owners_bf = Boy(
         'fibula_bone': 'AAGGCCT',
         'tibia_bone': 'CCGGTA',
         'femur_bone': 'GTAC',
-        'vagina': 'GGGTT',
         'penis': 'GTAC',
         'leg_muscle': 'GGGTT',
         'cords_mucosal': 'GTAC',
@@ -41,7 +39,7 @@ tweet_owners_bfs_brother = Boy(
         'fibula_bone': 'TTAAC',
         'tibia_bone': 'GGGTT',
         'femur_bone': 'CCGGTA',
-        'vagina': 'AAGGCCT',
+        'penis': 'AAGGCCT',
         'leg_muscle': 'GGGTT',
         'cords_mucosal': 'GTAC',
         'epiglottis': 'CCGGTA'
@@ -50,7 +48,15 @@ tweet_owners_bfs_brother = Boy(
 )
 # دوست دختر 8 ساله برادر دوست پسرش
 tweet_owners_bfs_brother.partner.append(
-    Girl(dna={}, location=iran)
+    Girl(dna={
+        'fibula_bone': 'TTAAC',
+        'tibia_bone': 'GGGTT',
+        'femur_bone': 'CCGGTA',
+        'vagina': 'AAGGCCT',
+        'leg_muscle': 'GGGTT',
+        'cords_mucosal': 'GTAC',
+        'epiglottis': 'CCGGTA'
+}, location=iran)
 )
 # یه دختر دیگه(همکار اکسش)
 tweet_owners_exs_colleague = Girl(
